@@ -28,9 +28,26 @@ Keep the full `thesis-writing/` folder together. `SKILL.md` references the suppo
 
 ## Installation
 
-Copy the `thesis-writing/` folder into your agent's local skills directory.
+### Codex
 
-Examples:
+Ask Codex to install this skill from:
+
+```text
+https://github.com/santifs/thesis-writing-skill/tree/main/thesis-writing
+```
+
+Or run the installer directly:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --url https://github.com/santifs/thesis-writing-skill/tree/main/thesis-writing
+```
+
+Restart Codex after installation so the new skill is loaded.
+
+### Manual Install
+
+Clone or download this repository, then copy the `thesis-writing/` folder into your agent's local skills directory.
 
 ```bash
 cp -R thesis-writing ~/.codex/skills/
